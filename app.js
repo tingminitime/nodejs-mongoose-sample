@@ -9,8 +9,6 @@ console.log(process.env.PORT)
 
 
 // mongoDB 連線設定
-// const mongoDB = 'mongodb://localhost:27017/hotel'
-// const mongoDB = 'mongodb+srv://tim:asd123@cluster0.7k7fr.mongodb.net/hotel?retryWrites=true&w=majority'
 const mongoDB = process.env.DATABASE.replace(
   '<password>',
   process.env.DATABASE_PASSWORD
